@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+header {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #134074;
+  margin-bottom: 0; 
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: #0b2545;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #134074;
+}
+
+nav {
+  background-color: #134074;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #ffffff96;
+  color: #04182f;
+}
+
+section article {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+}
+
+#Inicio img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
+#Nosotros ul {
+  list-style-type: square;
+  padding-left: 40px;
+  margin-top: 15px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th, 
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #133274;
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #faf9f8;
+}
+
+
+.mapa iframe {
+  border-radius: 8px;
+  border: 2px solid #ddd !important;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #134074;
+  outline: none;
+  box-shadow: 0 0 5px rgba(19, 64, 116, 0.4);
+}
+
+#enviar,
+#resetear {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.3s;
+}
+
+#enviar {
+  background-color: #2f8f55;
+  color: white;
+}
+
+#resetear {
+  background-color: #c93b3b;
+  color: white;
+}
+
+#enviar:hover,
+#resetear:hover {
+  opacity: 0.85;
+}
