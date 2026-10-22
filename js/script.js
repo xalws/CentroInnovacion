@@ -63,6 +63,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const btnSubmit = document.getElementById("enviar");
+  if (btnSubmit) {
+    btnSubmit.addEventListener("mouseover", () =>
+      console.log("Mouse sobre botón de enviar"),
+    );
+    btnSubmit.addEventListener("mouseleave", () =>
+      console.log("Mouse fuera de botón de enviar"),
+    );
+    btnSubmit.addEventListener("click", ()=>
+      console.log("Click en enviar")
+    );
+  }
+
+  const btnReset = document.getElementById("resetear");
+  if (btnReset) {
+    btnReset.addEventListener("mouseover", () =>
+      console.log("Mouse sobre botón de limpiar"),
+    );
+    btnReset.addEventListener("mouseleave", () =>
+      console.log("Mouse fuera de botón de limpiar"),
+    );
+    btnReset.addEventListener("click", ()=>
+      console.log("Click en resetear")
+    );
+  }
+
   // Seleccionar los elementos del DOM
   const textarea = document.getElementById("descripcion");
   const contador = document.getElementById("contador-caracteres");
@@ -70,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Función para actualizar el conteo
   function actualizarConteo() {
     const longitud = textarea.value.length;
-    contador.textContent = longitud; 
+    contador.textContent = longitud;
   }
 
   textarea.addEventListener("input", actualizarConteo);
